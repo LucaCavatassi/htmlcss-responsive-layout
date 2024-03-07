@@ -16,7 +16,7 @@ ul{
 }
 
 .wrapper{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
@@ -85,7 +85,7 @@ header{
 /* HERO */
 .hero{
     padding-top: calc(var(--headerheight) + 30px);    
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .all-col{
     width: 90%;
@@ -97,7 +97,7 @@ header{
 .col{
     background-color: var(--lightblue);
     border-radius: 20px;
-    width: 90%;
+    width: 100%;
     margin: 10px;
 
     /* debug */
@@ -123,7 +123,7 @@ header{
 @media screen and (min-width: 992px) {
     .all-col{
         width: 70%;
-    }   
+    }
 }
 
 /* PLANNING */
@@ -136,13 +136,13 @@ header{
     align-items: center;
 }
 .strategic{
-    width: 90%;
+    width: 100%;
     /* debug */
     height: 200px;
     border: 1px solid black;
 }
 .app-dev{
-    width: 90%;
+    width: 100%;
     /* debug */
     height: 200px;
     border: 1px solid black;
@@ -178,7 +178,7 @@ header{
 }
 
 .info-text{
-    width: 90%;
+    width: 100%;
     /* debug */
     height: 200px;
     border: 1px solid black;
@@ -187,7 +187,7 @@ header{
 .testi-card{
     background-color: var(--lilac);
     border-radius: 20px;
-    width: 90%;
+    width: 100%;
     margin: 10px;
 
     /* debug */
@@ -215,7 +215,7 @@ header{
 .feat-card{
     background-color: white;
     border-radius: 20px;
-    width: 90%;
+    width: 100%;
     margin: 10px;
 
     /* debug */
@@ -224,7 +224,7 @@ header{
 
 @media screen and (min-width:768px) {
     .feat-card{
-        width: calc(90% / 2);
+        width: calc(100% / 2 - 20px);
     }
     .all-feat{
         flex-direction: row;
@@ -238,4 +238,31 @@ header{
         width: calc(100% / 3 - 20px);
     }
     
+}
+
+/* ABOUT US */
+.info-and-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-pic{
+    width: 100%;
+
+    /* debug */
+    height: 200px;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+    .info-and-pic{
+        flex-direction: row;
+    }
+    .info-and-pic .info-text{
+        width: 60%;
+    }
+    .about-pic{
+        width: 40%;
+    }
 }
