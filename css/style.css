@@ -15,15 +15,20 @@ ul{
     list-style-type: none;
 }
 
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* HEADER */
 header{
     height: 70px;
     width: 100%;
     background-color: var(--blue);
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
+    position: fixed;   
 }
 
 .logo, .hamburger{
@@ -57,10 +62,6 @@ header{
 }
 
 
-@media screen and (min-width: 768px) {
-
-}
-
 @media screen and (min-width: 992px) {
     .hamburger{
         display: none;
@@ -68,4 +69,7 @@ header{
     .nav-head{
         display: block;
     }
+    .wrapper{
+        width: 70%;
+    }  
 }
