@@ -19,6 +19,12 @@ ul{
     width: 100%;
     margin: 0 auto;
 }
+@media screen and (min-width: 992px) {
+    .wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }  
+}
 
 /* HEADER */
 header{
@@ -28,6 +34,7 @@ header{
     width: 100%; 
     line-height: 70px;
 }
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -51,6 +58,7 @@ header{
 .nav-head{
     display: none;
 }
+
 .nav-head ul{
     height: 100%;
     display: flex;
@@ -63,7 +71,6 @@ header{
     color: white;
 }
 
-
 @media screen and (min-width: 992px) {
     .hamburger{
         display: none;
@@ -71,32 +78,30 @@ header{
     .nav-head{
         display: block;
     }
-    .wrapper{
-        width: 70%;
-        margin: 0 auto;
-    }  
 }
 
 /* MAIN */
 
 /* HERO */
 .hero{
-    padding-top: calc(var(--headerheight) + 30px);
+    padding-top: calc(var(--headerheight) + 30px);    
+    margin-bottom: 20px;
+}
+.all-col{
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .col{
     background-color: var(--lightblue);
     border-radius: 20px;
-    width: 100%;
-    margin: 10px 10px;
+    width: 90%;
+    margin: 10px;
 
     /* debug */
     height: 200px;
-    border: 1px solid black;
 }
 
 .grow{
@@ -104,7 +109,7 @@ header{
 }
 
 @media screen and (min-width: 768px) {
-    .hero{
+    .all-col{
         flex-direction: row;
         flex-wrap: wrap-reverse;
     }
@@ -115,10 +120,122 @@ header{
         flex-grow: 1;
     }
 }
-
 @media screen and (min-width: 992px) {
-    .wrapper{
+    .all-col{
         width: 70%;
-        margin: 0 auto;
+    }   
+}
+
+/* PLANNING */
+.planning{
+    background-color: var(--lilac);
+}
+.plann-types{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.strategic{
+    width: 90%;
+    /* debug */
+    height: 200px;
+    border: 1px solid black;
+}
+.app-dev{
+    width: 90%;
+    /* debug */
+    height: 200px;
+    border: 1px solid black;
+}
+
+.app-dev-card{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    /* debug */
+    height: 100%;
+}
+
+    
+@media screen and (min-width: 992px) {
+    .plann-types{
+        flex-direction: row;
     }
+    .app-dev-card{
+        height: 70%;
+    }
+    .app-dev{
+        display: flex;
+        align-items: end;
+    }
+}
+
+/* TESTIMONIALS */
+.all-testi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-text{
+    width: 90%;
+    /* debug */
+    height: 200px;
+    border: 1px solid black;
+}
+
+.testi-card{
+    background-color: var(--lilac);
+    border-radius: 20px;
+    width: 90%;
+    margin: 10px;
+
+    /* debug */
+    height: 200px;
+}
+@media screen and (min-width:992px) {
+    .info-text{
+        width: 100%;
+    }
+    .testi-card{
+        width: 100%;
+    }
+}
+
+/* FEATURES */
+.features{
+    background-color: var(--lilac);
+}
+.all-feat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feat-card{
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: 10px;
+
+    /* debug */
+    height: 200px;
+}
+
+@media screen and (min-width:768px) {
+    .feat-card{
+        width: calc(90% / 2);
+    }
+    .all-feat{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .feat-card{
+        width: calc(100% / 3 - 20px);
+    }
+    
 }

@@ -11,6 +11,9 @@
 .p-y-20{
     padding: 0 20px;
 }
+.p-x-20{
+    padding: 20px 0;
+}
 
 .p-b-20{
     padding-bottom: 20px;
@@ -18,4 +21,8 @@
 
 .m-x-20{
     margin: 0 20px;
+}
+
+.m-10-10{
+    margin: 10px 10px;
 }
