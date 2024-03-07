@@ -4,13 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 img{
     width: 100%;
 }
+
+
 /* COMMON */
 html{
     scroll-behavior: smooth;
 }
+
 body{
     font-family: 'PT Sans', sans-serif;
 }
@@ -21,7 +25,9 @@ ul{
 
 a{
     cursor: pointer;
+    color: inherit;
 }
+
 
 /* HEADER */
 header{
@@ -30,6 +36,7 @@ header{
     height: 70px;
     width: 100%; 
     line-height: 70px;
+    color: white;
 }
 
 .header{
@@ -64,7 +71,13 @@ header{
 
 .nav-head ul a{
     text-decoration: none;
-    color: white;
+}
+
+.bttn-hdr{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
 @media screen and (min-width: 992px) {
@@ -73,8 +86,10 @@ header{
     }
     .nav-head{
         display: block;
+        font-size: 0.7rem;
     }
 }
+
 
 /* MAIN */
 .wrapper{
@@ -89,15 +104,39 @@ header{
 }
 
 /* HERO */
+/* general */
 .hero{
     padding-top: calc(var(--headerheight) + 30px);    
     padding-bottom: 20px;
 }
+
 .all-col{
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* bigcol */
+.bigcol{
+    background-color: var(--lightblue);
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px;
+
+    height: 200px;
+}
+
+.bigcol a{
+    text-decoration: none;
+}
+.bigcol-bttn{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 60%;
+    display: block;
 }
 
 .col{
@@ -117,7 +156,10 @@ header{
 @media screen and (min-width: 768px) {
     .all-col{
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
+    }
+    .bigcol{
+        width: calc(100% / 2);
     }
     .col{
         width: calc(100% / 3 - 20px);
@@ -130,6 +172,7 @@ header{
     .all-col{
         width: 70%;
     }
+
 }
 
 /* PLANNING */
