@@ -8,11 +8,19 @@ img{
     width: 100%;
 }
 /* COMMON */
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
 ul{
     list-style-type: none;
+}
+
+a{
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -30,7 +38,6 @@ header{
 }
 
 .logo, .hamburger{
-    text-align: center;
     line-height: 70px;
 }
 
