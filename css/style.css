@@ -15,17 +15,6 @@ ul{
     list-style-type: none;
 }
 
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-}
-@media screen and (min-width: 992px) {
-    .wrapper{
-        width: 70%;
-        margin: 0 auto;
-    }  
-}
-
 /* HEADER */
 header{
     background-color: var(--blue);
@@ -81,6 +70,16 @@ header{
 }
 
 /* MAIN */
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+    .wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }  
+}
 
 /* HERO */
 .hero{
@@ -265,4 +264,24 @@ header{
     .about-pic{
         width: 40%;
     }
+}
+
+/* FOOTER */
+.get-started{
+    background-color: var(--lilac);
+}
+
+.c-t-a{
+    /* debug */
+    border: 1px solid black;
+    height: 100px;
+}
+
+.footer-bottom{
+    background-color: var(--black);
+}
+
+.copyright{
+    border: 1px solid white;
+    height: 50px;
 }
