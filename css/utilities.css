@@ -5,8 +5,17 @@
     --lilac: #9792E4;
     --yellow: #FDC15F;
     --black: #333333;
+    --headerheight: 70px;
 }
 
 .p-y-20{
     padding: 0 20px;
+}
+
+.p-b-20{
+    padding-bottom: 20px;
+}
+
+.m-x-20{
+    margin: 0 20px;
 }
