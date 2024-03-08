@@ -19,10 +19,22 @@
         display: inline;
     }
 
+    /* TESTIMONIALS */
+    .testi-card {
+        display: flex;
+    }
+    .testi-text{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
     /* FEATURES */
     .feat-card{
         width: calc(100% / 2 - 20px);
     }
+
     .all-feat{
         flex-direction: row;
         justify-content: center;
@@ -33,9 +45,11 @@
     .info-and-pic{
         flex-direction: row;
     }
+
     .info-and-pic .info-text{
         width: 60%;
     }
+
     .about-pic{
         width: 40%;
     }

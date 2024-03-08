@@ -108,6 +108,11 @@ header{
     align-items: center;
 }
 
+.all-col p{
+    font-size: 0.9rem ;
+    line-height: 1.7rem;
+}
+
 /* cols */
 .col{
     width: 100%;
@@ -119,11 +124,6 @@ header{
 .col h3{
     color: var(--blue);
     font-size: 1.5rem;
-}
-
-.col p{
-    font-size: 0.9rem ;
-    line-height: 1.7rem;
 }
 
 .col a{
@@ -160,6 +160,11 @@ header{
 .planning{
     background-color: var(--lilac);
 }
+
+.planning p{
+    font-size: 0.9rem;
+}
+
 .plann-types{
     display: flex;
     flex-direction: column;
@@ -175,10 +180,6 @@ header{
     font-size: 2rem;
 }
 
-.strategic p{
-    font-size: 0.9rem;
-}
-
 
 .app-dev-card{
     width: 100%;
@@ -190,9 +191,11 @@ header{
 .app-dev-card i{
     padding: 12px 0;
 }
+
 .app-dev-card p{
     font-style: italic;
 }
+
 .app-dev-card a{
     display: inline-block;
     height: 40px;
@@ -201,22 +204,31 @@ header{
     border-radius: 50%;
     margin-bottom: 30px;
 }
+
 .app-dev-wrap{
     width: 90%;
     margin: 0 auto;
 }
+
 /* TESTIMONIALS */
+/* general */
+.testimonials p{
+    font-size: 0.9rem;
+}
+
 .all-testi{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* specific */
 .info-text{
     width: 100%;
-    /* debug */
-    height: 200px;
-    border: 1px solid black;
+}
+
+.info-text h2{
+    color: var(--lilac);
 }
 
 .testi-card{
@@ -224,9 +236,17 @@ header{
     border-radius: 20px;
     width: 100%;
     margin: 10px;
+}
+.testi-card img{
+    width: 70%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
 
-    /* debug */
-    height: 200px;
+.testi-text i{
+    font-size: 1.3rem;
 }
 
 

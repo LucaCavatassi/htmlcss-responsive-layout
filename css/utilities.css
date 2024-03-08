@@ -1,4 +1,6 @@
 /* UTILITIES */
+
+/* custom properties */
 :root{
     --blue: #0084FD;
     --lightblue: #B5DDFF;
@@ -6,6 +8,11 @@
     --yellow: #FDC15F;
     --black: #333333;
     --headerheight: 70px;
+}
+
+/* padding and margin */
+.p-20{
+    padding: 20px;
 }
 
 .p-x-20{
@@ -23,6 +30,11 @@
     padding-top: 20px;
 }
 
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+/* text */
 .text-center{
     text-align: center;
 }
@@ -31,7 +43,7 @@
     text-align: left;
 }
 
-
+/* text-colors */
 .white-text{
     color: white;
 }
