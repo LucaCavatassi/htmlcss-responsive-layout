@@ -32,7 +32,15 @@ a{
 .container{
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
+
+.smaller-container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 /* HEADER */
 header{
     background-color: var(--blue);
@@ -112,12 +120,18 @@ header{
     color: var(--blue);
     font-size: 1.5rem;
 }
+
 .col p{
     font-size: 0.9rem ;
     line-height: 1.7rem;
 }
+
 .col a{
     text-decoration: none;
+}
+
+.col img{
+    display: block;
 }
 
 .col-bttn{
@@ -130,19 +144,19 @@ header{
     width: 80%;
     display: block;
 }
+
 .col-bttn i{
     display: inline;
-}
-
-.col img{
-    display: block;
 }
 
 .col-img{
     font-size: 5rem;
     color: var(--blue);
 }
+
+
 /* PLANNING */
+/* general */
 .planning{
     background-color: var(--lilac);
 }
@@ -152,29 +166,45 @@ header{
     align-items: center;
 }
 
-/* da fare fix per container piu piccolo */
+/* specific */
 .strategic{
     width: 100%;
-    /* debug */
-    height: 200px;
-    border: 1px solid black;
 }
-.app-dev{
-    width: 100%;
-    /* debug */
-    height: 200px;
-    border: 1px solid black;
+
+.strategic h2{
+    font-size: 2rem;
 }
+
+.strategic p{
+    font-size: 0.9rem;
+}
+
 
 .app-dev-card{
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    /* debug */
-    height: 100%;
+    margin-top: 20px;
 }
 
-
+.app-dev-card i{
+    padding: 12px 0;
+}
+.app-dev-card p{
+    font-style: italic;
+}
+.app-dev-card a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--lilac);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.app-dev-wrap{
+    width: 90%;
+    margin: 0 auto;
+}
 /* TESTIMONIALS */
 .all-testi{
     display: flex;

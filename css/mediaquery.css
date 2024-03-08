@@ -50,6 +50,10 @@
         margin: 0 auto;
     }  
 
+    .smaller-container{
+        width: 50%;
+        margin: 0 auto;
+    }
     /* HEADER */
     .hamburger{
         display: none;
@@ -81,13 +85,16 @@
     /* PLANNINGS */
     .plann-types{
         flex-direction: row;
+        align-items: flex-end;
+        gap: 40px;
     }
     .app-dev-card{
         height: 70%;
-    }
-    .app-dev{
         display: flex;
         align-items: end;
+    }
+    .app-dev-card img{
+        width: 70%;
     }
     /* TESTIMONIALS AND FEATURES */
     .info-text{
