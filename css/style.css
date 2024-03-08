@@ -318,6 +318,7 @@ header{
 .about-pic h3{
     line-height: 2rem;
 }
+
 .about-pic img{
     width: 50%;
     border-radius: 50%;
@@ -327,16 +328,16 @@ header{
     display: inline-block;
 }
 
+.about-image{
+    position: relative;
+}
+
 .about-image i{
     position: absolute;
     font-size: 3rem;
     top: 0;
     right: 50%;
     color: var(--lilac);
-}
-
-.about-image{
-    position: relative;
 }
 
 .about-bttn{
@@ -352,27 +353,67 @@ header{
 .about-bttn i{
     display: inline;
 }
+
 .about-bttn a{
     font-size: 0.9rem;
     text-decoration: none;
 }
 
 /* FOOTER */
+/* general */
 .get-started{
     background-color: var(--lilac);
 }
 
 .c-t-a{
-    /* debug */
-    border: 1px solid black;
-    height: 100px;
+    color: white;
 }
 
 .footer-bottom{
     background-color: var(--black);
 }
 
-.copyright{
-    border: 1px solid white;
-    height: 50px;
+/* specific */
+.c-t-a span{
+    color: var(--lilac2);
+}
+
+.c-t-a h3{
+    font-size: 2rem;
+}
+
+.c-t-a h2{
+    font-size: 4rem;
+    color: var(--yellow);
+}
+
+.c-t-a :last-child{
+    font-size: 0.7rem;
+}
+
+#foot-bttn{
+    margin: 20px;
+    background-color: white;
+    color: white;
+    margin: 25px 0;
+    padding: 20px 50px;
+    border-radius: 30px;
+    color: var(--lilac);
+    letter-spacing: 0.1rem;
+}
+
+#foot-bttn a{
+    text-decoration: none;
+}
+
+#foot-bttn{
+    display: inline-block;
+}
+
+.copyright p{
+    font-size: 0.7rem;
+}
+
+.copyright a{
+    color: var(--lilac);
 }
