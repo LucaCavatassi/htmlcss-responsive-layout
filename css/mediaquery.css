@@ -1,0 +1,81 @@
+/* TABLET */
+@media screen and (min-width: 768px) {
+    /* HERO */
+    .all-col{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .all-col :first-child{
+        width: calc(2 * 100% / 3 - 20px);
+    }
+    .col{
+        width: calc(100% / 3 - 20px);
+    }
+
+    /* FEATURES */
+    .feat-card{
+        width: calc(100% / 2 - 20px);
+    }
+    .all-feat{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* ABOUT US */
+    .info-and-pic{
+        flex-direction: row;
+    }
+    .info-and-pic .info-text{
+        width: 60%;
+    }
+    .about-pic{
+        width: 40%;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    .hamburger{
+        display: none;
+    }
+    .nav-head{
+        display: block;
+        font-size: 0.7rem;
+    }
+
+    /* MAIN */
+    .wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }  
+
+    /* HERO */
+    .all-col{
+        width: 70%;
+    }
+
+    /* PLANNINGS */
+    .plann-types{
+        flex-direction: row;
+    }
+    .app-dev-card{
+        height: 70%;
+    }
+    .app-dev{
+        display: flex;
+        align-items: end;
+    }
+    /* TESTIMONIALS AND FEATURES */
+    .info-text{
+        width: 100%;
+    }
+    .testi-card{
+        width: 100%;
+    }
+    .feat-card{
+        width: calc(100% / 3 - 20px);
+    }
+}
+

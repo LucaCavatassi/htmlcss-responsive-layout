@@ -80,27 +80,10 @@ header{
     padding: 5px 10px;
 }
 
-@media screen and (min-width: 992px) {
-    .hamburger{
-        display: none;
-    }
-    .nav-head{
-        display: block;
-        font-size: 0.7rem;
-    }
-}
-
-
 /* MAIN */
 .wrapper{
     width: 90%;
     margin: 0 auto;
-}
-@media screen and (min-width: 992px) {
-    .wrapper{
-        width: 70%;
-        margin: 0 auto;
-    }  
 }
 
 /* HERO */
@@ -149,31 +132,6 @@ header{
     height: 200px;
 }
 
-.grow{
-    flex-grow: 0;
-}
-
-@media screen and (min-width: 768px) {
-    .all-col{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .bigcol{
-        width: calc(100% / 2);
-    }
-    .col{
-        width: calc(100% / 3 - 20px);
-    }
-    .grow{
-        flex-grow: 1;
-    }
-}
-@media screen and (min-width: 992px) {
-    .all-col{
-        width: 70%;
-    }
-
-}
 
 /* PLANNING */
 .planning{
@@ -184,6 +142,8 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+/* da fare fix per container piu piccolo */
 .strategic{
     width: 100%;
     /* debug */
@@ -205,19 +165,6 @@ header{
     height: 100%;
 }
 
-    
-@media screen and (min-width: 992px) {
-    .plann-types{
-        flex-direction: row;
-    }
-    .app-dev-card{
-        height: 70%;
-    }
-    .app-dev{
-        display: flex;
-        align-items: end;
-    }
-}
 
 /* TESTIMONIALS */
 .all-testi{
@@ -242,14 +189,7 @@ header{
     /* debug */
     height: 200px;
 }
-@media screen and (min-width:992px) {
-    .info-text{
-        width: 100%;
-    }
-    .testi-card{
-        width: 100%;
-    }
-}
+
 
 /* FEATURES */
 .features{
@@ -271,23 +211,6 @@ header{
     height: 200px;
 }
 
-@media screen and (min-width:768px) {
-    .feat-card{
-        width: calc(100% / 2 - 20px);
-    }
-    .all-feat{
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .feat-card{
-        width: calc(100% / 3 - 20px);
-    }
-    
-}
 
 /* ABOUT US */
 .info-and-pic{
@@ -302,18 +225,6 @@ header{
     /* debug */
     height: 200px;
     border: 1px solid black;
-}
-
-@media screen and (min-width: 768px) {
-    .info-and-pic{
-        flex-direction: row;
-    }
-    .info-and-pic .info-text{
-        width: 60%;
-    }
-    .about-pic{
-        width: 40%;
-    }
 }
 
 /* FOOTER */
