@@ -44,6 +44,8 @@
     /* ABOUT US */
     .info-and-pic{
         flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
     }
 
     .info-and-pic .info-text{
@@ -52,6 +54,25 @@
 
     .about-pic{
         width: 40%;
+    }
+
+    .info-text h2{
+        font-size: 4rem;
+    }
+
+    .about-image{
+        text-align: center;
+    }
+
+    .about-image img{
+        width: 80%;
+        text-align: center;
+    }
+
+    .about-image i{
+        font-size: 4rem;
+        top: 0;
+        right: 10%;
     }
 }
 
@@ -72,6 +93,7 @@
     .hamburger{
         display: none;
     }
+
     .nav-head{
         display: block;
         font-size: 0.7rem;
@@ -92,6 +114,7 @@
     .hero-info{
         width: 60%;
     }
+
     .img-container{
         width: 45%;
     }
@@ -102,21 +125,26 @@
         align-items: flex-end;
         gap: 40px;
     }
+
     .app-dev-card{
         height: 70%;
         display: flex;
         align-items: end;
     }
+
     .app-dev-card img{
         width: 70%;
     }
+
     /* TESTIMONIALS AND FEATURES */
     .info-text{
         width: 100%;
     }
+
     .testi-card{
         width: 100%;
     }
+    
     .feat-card{
         width: calc(100% / 3 - 20px);
     }
