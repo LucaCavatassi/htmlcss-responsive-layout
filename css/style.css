@@ -237,6 +237,7 @@ header{
     width: 100%;
     margin: 10px;
 }
+
 .testi-card img{
     width: 70%;
     border-radius: 50%;
@@ -249,10 +250,14 @@ header{
     font-size: 1.3rem;
 }
 
-
 /* FEATURES */
+/* general */
 .features{
     background-color: var(--lilac);
+}
+.features p{
+    font-size: 0.9rem;
+    line-height: 1.7rem;
 }
 .all-feat{
     display: flex;
@@ -260,17 +265,30 @@ header{
     align-items: center;
 }
 
+/* specific */
+.feat-text h2{
+    font-size: 2rem;
+}
+
 .feat-card{
     background-color: white;
     border-radius: 20px;
     width: 100%;
     margin: 10px;
-
-    /* debug */
-    height: 200px;
+    padding: 0 20px;
 }
 
+.feat-card h2{
+    font-size: 3rem;
+}
 
+.feat-card a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--lilac);
+    border-radius: 20px;
+    padding: 10px 50px;
+}
 /* ABOUT US */
 .info-and-pic{
     display: flex;

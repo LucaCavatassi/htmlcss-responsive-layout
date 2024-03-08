@@ -34,6 +34,10 @@
     margin-bottom: 20px;
 }
 
+.m-b-30{
+    margin-bottom: 30px;
+}
+
 /* text */
 .text-center{
     text-align: center;
@@ -48,3 +52,6 @@
     color: white;
 }
 
+.lilac-text{
+    color: var(--lilac);
+}
