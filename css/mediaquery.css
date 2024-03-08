@@ -4,12 +4,19 @@
     .all-col{
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: stretch;
     }
-    .all-col :first-child{
+
+    .all-col .col:first-child{
         width: calc(2 * 100% / 3 - 20px);
     }
+    
     .col{
         width: calc(100% / 3 - 20px);
+    }
+
+    .hero-info{
+        display: inline;
     }
 
     /* FEATURES */
@@ -36,6 +43,13 @@
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
+    /* COMMON */
+    /* layout */
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }  
+
     /* HEADER */
     .hamburger{
         display: none;
@@ -45,15 +59,23 @@
         font-size: 0.7rem;
     }
 
-    /* MAIN */
-    .wrapper{
-        width: 70%;
-        margin: 0 auto;
-    }  
-
     /* HERO */
-    .all-col{
-        width: 70%;
+    .all-col .col:first-child{
+        display: flex;
+    }
+
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .hero-info{
+        width: 60%;
+    }
+    .img-container{
+        width: 45%;
     }
 
     /* PLANNINGS */
@@ -77,5 +99,7 @@
     .feat-card{
         width: calc(100% / 3 - 20px);
     }
-}
+
+    }
+
 

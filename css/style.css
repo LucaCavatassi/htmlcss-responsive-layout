@@ -28,7 +28,11 @@ a{
     color: inherit;
 }
 
-
+/* layout */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
 /* HEADER */
 header{
     background-color: var(--blue);
@@ -81,10 +85,7 @@ header{
 }
 
 /* MAIN */
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-}
+
 
 /* HERO */
 /* general */
@@ -94,45 +95,53 @@ header{
 }
 
 .all-col{
-    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* bigcol */
-.bigcol{
+
+/* cols */
+.col{
+    width: 100%;
     background-color: var(--lightblue);
     border-radius: 20px;
-    width: 100%;
     margin: 10px;
-
-    height: 200px;
 }
 
-.bigcol a{
+.col h3{
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+.col p{
+    font-size: 0.9rem ;
+    line-height: 1.7rem;
+}
+.col a{
     text-decoration: none;
 }
-.bigcol-bttn{
+
+.col-bttn{
     background-color: var(--blue);
     color: white;
+    margin: 25px 0;
     padding: 10px 10px;
     border-radius: 20px;
     text-align: center;
-    width: 60%;
+    width: 80%;
+    display: block;
+}
+.col-bttn i{
+    display: inline;
+}
+
+.col img{
     display: block;
 }
 
-.col{
-    background-color: var(--lightblue);
-    border-radius: 20px;
-    width: 100%;
-    margin: 10px;
-
-    /* debug */
-    height: 200px;
+.col-img{
+    font-size: 5rem;
+    color: var(--blue);
 }
-
-
 /* PLANNING */
 .planning{
     background-color: var(--lilac);

@@ -8,10 +8,10 @@
     --headerheight: 70px;
 }
 
-.p-y-20{
+.p-x-20{
     padding: 0 20px;
 }
-.p-x-20{
+.p-y-20{
     padding: 20px 0;
 }
 
@@ -21,4 +21,16 @@
 
 .p-t-20{
     padding-top: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.width-50{
+    width: 50%;
 }
